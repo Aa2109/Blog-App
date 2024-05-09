@@ -1,0 +1,21 @@
+body{
+  background: #e0dede;
+}
+.pr.nav-link.active {
+  /* background-color: rgba(237, 218, 5, 0.988); */
+  font-weight: 800; /* Optionally, add other styles */
+  
+}
+
+
+/* .wrapper :not(h3) {
+  color: rgb(243, 208, 12) !important;
+  --bs-text-opacity: unset !important;
+} */
+p{
+  color:black ;
+}
+
+
+
+
