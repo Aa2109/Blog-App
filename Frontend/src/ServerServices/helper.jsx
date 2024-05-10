@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getJwtToken } from "../auth";
 
-export const BASE_URL = 'http://localhost:8080';
+// export const BASE_URL = 'http://localhost:8080';
+export const BASE_URL = 'https://blog-app-production-800c.up.railway.app';
 
 export const myAxios = axios.create({
   baseURL: BASE_URL
