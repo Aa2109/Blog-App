@@ -1,8 +1,14 @@
 import axios from "axios";
 import { getJwtToken } from "../auth";
 
-// export const BASE_URL = 'http://localhost:8080';
-export const BASE_URL = 'https://blog-app-production-800c.up.railway.app';
+// // export const BASE_URL = 'http://localhost:8080';
+// export const BASE_URL = 'https://blog-app-production-800c.up.railway.app';
+const isDevelopment = process.env.NODE_ENV === 'development';
+const developmentBaseUrl = 'http://localhost:8080';
+const productionBaseUrl = 'https://blog-app-production-800c.up.railway.app';
+
+export const BASE_URL = isDevelopment ? developmentBaseUrl : productionBaseUrl;
+
 
 export const myAxios = axios.create({
   baseURL: BASE_URL
