@@ -57,6 +57,7 @@ public class CommentServicesImpl implements CommentServices {
 		String username = this.jwtTokenHelper.getUsernameFromJwtToken(jwt);
 //		System.out.println("username: "+username);
 		UserDetails user = this.userDetailsService.loadUserByUsername(username);
+		comment.setPost(post);
 		comment.setUser((User) user);
 		
 		Comments savedComment = this.commentsRepo.save(comment);

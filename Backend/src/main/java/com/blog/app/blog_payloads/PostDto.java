@@ -1,9 +1,6 @@
 package com.blog.app.blog_payloads;
 
 import java.util.*;
-import com.blog.app.blog_entity.Comments;
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
 import jakarta.persistence.Column;
 import lombok.AllArgsConstructor;

@@ -1,5 +1,4 @@
 package com.blog.app.blog_payloads;
-import com.blog.app.blog_entity.User;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,5 +11,6 @@ public class CommentDto{
 	private int commentId;
 	private String commentContent;	
 	private UserDto user;
-	private PostDto posts;
+//	private PostDto post;
+	 private int postId;
 }

@@ -18,7 +18,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-@EqualsAndHashCode(exclude = {"comments"})// Exclude collections to avoid circular dependencies in hashCode
+//@EqualsAndHashCode(exclude = {"comments"})// Exclude collections to avoid circular dependencies in hashCode
 @Entity
 @Data
 @NoArgsConstructor
