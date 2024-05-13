@@ -10,6 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.Lob;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
@@ -28,6 +29,8 @@ public class Post {
 	private int postId;
 	@Column(name="post_title", length = 500, nullable = false)
 	private String postTitle;
+	@Lob
+	@Column(nullable = false, columnDefinition = "TEXT")
 	private String postContent;
 	private String postImage;
 	private Date postDate;

@@ -38,7 +38,6 @@ const AddPost = () => {
 
   // field chnaged
   const fieldChanged = (event) => {
-    console.log(event);
     setPost({ ...post, [event.target.name]: event.target.value });
   };
 
