@@ -57,7 +57,7 @@ const NewFeed = () => {
     // user here validation or confirm boxes to sure dete or anthing what u want
     // going to delete
     deletePostById(post.postId).then(data => {
-      console.log(data);
+      // console.log(data);
       toast.success("Post deleted");
       let newPostContent = postContent.content.filter(p=>p.postId != post.postId)
       setPostContent({...postContent, content :newPostContent})

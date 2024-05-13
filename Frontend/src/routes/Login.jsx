@@ -36,7 +36,7 @@ const Login = () => {
 
   const handleSubmit = (event)=>{
     event.preventDefault();
-    console.log("logonDetails: ",loginDetails);
+    // console.log("logonDetails: ",loginDetails);
     //validation
     if(loginDetails.username.trim() ==='' || loginDetails.password.trim() ===''){
       toast.error("username or password is required !")
@@ -47,7 +47,7 @@ const Login = () => {
     loginUser(loginDetails).then((data)=>{
       // save data to localStorage
       doLogin(data,()=>{
-        console.log("login detail is saved to localStorage");
+        // console.log("login detail is saved to localStorage");
 
         userContextData.setUser({
           data:data.user,

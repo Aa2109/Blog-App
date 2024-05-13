@@ -19,8 +19,6 @@ public class PostDto {
 	private String postImage;
 	private Date postDate;
 	private CategoryDto category;
-//	@JsonProperty(access = Access.WRITE_ONLY)
 	private UserDto user;
-//	@JsonProperty(access = Access.WRITE_ONLY)
-	private Set<CommentDto> comments = new HashSet<>();
+	private List<CommentDto> comments = new ArrayList<>();
 }

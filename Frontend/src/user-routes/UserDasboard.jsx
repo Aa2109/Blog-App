@@ -32,7 +32,7 @@ const UserDasboard = () => {
       // user here validation or confirm boxes to sure dete or anthing what u want
       // going to delete
       deletePostById(post.postId).then(data => {
-        console.log(data);
+        // console.log(data);
         toast.success("Post deleted");
         let newPosts = posts.filter(p=>p.postId !== post.postId)
         setPosts([...newPosts])

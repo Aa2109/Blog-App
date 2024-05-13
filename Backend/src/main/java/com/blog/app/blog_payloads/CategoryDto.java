@@ -24,7 +24,7 @@ public class CategoryDto {
 	private String categoryName;
 	@NotEmpty
 	private String categoryDescription;
-	@JsonProperty(access = Access.WRITE_ONLY)
-	private Set<PostDto> posts = new HashSet<>();
+//	@JsonProperty(access = Access.WRITE_ONLY)
+//	private Set<PostDto> posts = new HashSet<>();
 
 }

@@ -49,7 +49,7 @@ public class UserDto {
 	@Size(min =10, max=200, message="About should contains atleast 10 charactes")
 	private String about;
 	
-	private Set<Role> roles = new HashSet<>();
+	private Set<RoleDto> roles = new HashSet<>();
 	@JsonProperty(access = Access.WRITE_ONLY)
 	private Set<CommentDto> comments = new HashSet<>();
 	@JsonProperty(access = Access.WRITE_ONLY)

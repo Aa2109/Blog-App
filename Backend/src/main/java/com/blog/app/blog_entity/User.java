@@ -40,7 +40,7 @@ public class User implements UserDetails{
 	private String password;
 	private String about;
 	
-	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	@OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private Set<Post> posts = new HashSet<>();
 	
 	@ManyToMany(cascade =CascadeType.ALL, fetch = FetchType.EAGER)

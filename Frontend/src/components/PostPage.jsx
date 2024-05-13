@@ -16,7 +16,7 @@ const PostPage = () => {
   useEffect(() => {
     loadPost(postId)
       .then(data => {
-        // console.log(data);
+        console.log(data);
         setPost(data);
       })
       .catch(error => {
@@ -47,7 +47,7 @@ const PostPage = () => {
 
     createComment(comment, post?.postId)
       .then(data => {
-        console.log(data);
+        // console.log(data);
         toast.success("Comment added..");
         // Reload post data to fetch updated comments
         loadPost(postId)

@@ -36,18 +36,18 @@ public class Post {
 	private Date postDate;
 	
 	@ManyToOne
-	@JoinColumn(name = "categoryId")
+	@JoinColumn(name = "category_id")
 	private Category category;
 	
 	
 //	@JoinColumn(name = "userId", nullable = false) //User associations (@ManyToOne) have been set to nullable =
 						//false, which means every post must have a user associated with it.
 	@ManyToOne
-	@JoinColumn(name = "userId")
+	@JoinColumn(name = "user_id")
 	private User user; 
 	
 	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL)
-	private Set<Comments> comments = new HashSet<>();
+	private List<Comments> comments = new ArrayList<>();
 
 	
 }
